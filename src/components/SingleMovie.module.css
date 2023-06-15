@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.parent {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.image {
+  max-width: 300px;
+  width: 100%;
+}
+.image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image img:hover {
+  transform: scale(1.02);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: poppins;
+}
+.content p:first-child {
+  max-width: 500px;
+  color: red;
+}/*# sourceMappingURL=SingleMovie.module.css.map */
