@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}></Route>
+        <Route path="/" exact element={<App />}></Route>
         <Route path="singleMovie/:id/:movie" element={<SingleMovie />}></Route>
         <Route path="/*" element={<h1>Page Not</h1>} />
       </Routes>
