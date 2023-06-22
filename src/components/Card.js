@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import Movie from "./Movie";
+import InfiniteScroll from "react-infinite-scroll-component";
 export default function Card(props) {
   const [movie, setMovies] = useState([]);
   const [searchMovie, setSearchMovie] = useState([]);
@@ -39,7 +40,7 @@ export default function Card(props) {
           searchMovie.map((element) => {
             return (
               <Movie
-                image={element.backdrop_path}
+                image={element.poster_path}
                 title={element.title}
                 date={element.release_date}
                 vote={element.vote_average}
